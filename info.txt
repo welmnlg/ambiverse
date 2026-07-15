@@ -1,0 +1,49 @@
+LOGIN ADMIN:
+username = admin 
+password = ambiverse
+
+LOGIN USER:
+username = indry
+password = indry123
+
+username = patris
+password = patris2004
+
+dll
+
+Nama database yang digunakan:
+ambiverse
+
+Fitur Login & Register:
+- Saat membuat akun baru, pengguna tidak boleh memberikan username dan password terlalu pendek, serta mengisi email sesuai dengan format email.
+- Pengguna tidak bisa membuat akun baru apabila username yang dipilih sudah digunakan pengguna lain.
+- Untuk keamanan data pengguna, digunakan fitur hashing password sehingga password asli tidak akan kelihatan bahkan di dalam database.
+- Memiliki fitur Toggle Password pada halaman register agar pengguna bisa memastikan password yang dimasukkan sudah sesuai dengan yang diinginkan.
+- Selama belum logout, pengguna akan bisa mengakses halamannya tanpa melakukan login berkali-kali selama browser tidak ditutup.
+- Pengguna bisa logout
+
+Fitur-fitur penting di admin:
+- Membuat paket soal baru, mengedit paket soal dan menghapus paket soal. (CRUD)
+    - Ada validasi agar pengguna tidak menginput data yang salah atau memberi nama judul terlalu pendek.
+    - Menggunakan DataTables sehingga memudahkan admin menyortir, mencari serta melihat data.
+- Menambahkan soal dan jawaban ke dalam paket soal, mengedit serta menghapus soal. (CRUD)
+    - Menggunakan WYSIWYG editor.
+- Menampilkan hasil tryout seluruh pengguna.
+    - Menggunakan Bootstrap Accordion agar data lebih rapi.
+- Melihat list pengguna dan dapat menghapus akun pengguna.
+- Dapat melihat kritik dan saran yang dikirim oleh pengguna, serta menghapusnya.
+
+Fitur-fitur penting di student:
+- Halaman dashboard menampilkan hanya 5 paket soal terbaru yang ditambahkan oleh admin.
+- Memilih dan mengerjakan soal tryout, dapat berulang kali dikerjakan.
+- Fitur pengerjaan hanya bisa dijalankan apabila dalam paket soal terdapat soal. Apabila pengguna langsung masuk ke halaman hasil dan mendapat nilai 0 maka itu berarti belum ada soal di paket soal yang dipilih pengguna.
+- Dalam pengerjaan soal, terdapat beberapa fitur tambahan:
+    - Menampilkan soal menggunakan ajax.
+    - Menampilkan countdown timer menggunakan ajax.
+    - Tombol Previous dan Next yang bisa digunakan.
+- Fitur Leaderboard memungkinkan pengguna untuk melihat nilai dari pengguna lain, data diurutkan dari yang nilainya paling tinggi.
+- Riwayat Pengerjaan Soal akan menampilkan riwayat pengerjaan user diurutkan dari yg paling baru.
+- Hasil Tryout akan menampilkan nilai dari tryout yang telah dikerjakan user.
+- User dapat mengirimkan kritik dan saran kepada admin.
+
+
